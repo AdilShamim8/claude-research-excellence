@@ -11,7 +11,7 @@ CRES is a comprehensive, skill-based framework that transforms research ideas in
 ## Quick Start (5 minutes to first prompt)
 
 1. **Copy `MASTER_PROMPT.md`** — paste as your Claude system prompt
-2. **State your research area**: "I'm working on [TOPIC]"
+2. **State your research area**: "I'm working on [TOPIC]."
 3. **Activate your needed skill**: "ACTIVATE: IDEATION"
 4. **Follow the structured output** — iterate from there
 
