@@ -520,4 +520,4 @@ This work was supported by...
 
 ---
 
-*Last updated: 2024 | CRES Template Version 1.0*
+*Last updated: 2026 | CRES Template Version 1.0*

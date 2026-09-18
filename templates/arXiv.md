@@ -617,4 +617,4 @@ Pre-trained models and datasets are available at
 
 ---
 
-*Last updated: 2024 | CRES Template Version 1.0*
+*Last updated: 2026 | CRES Template Version 1.0*

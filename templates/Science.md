@@ -479,4 +479,4 @@ J.A.S. wrote the manuscript with input from all authors.
 
 ---
 
-*Last updated: 2024 | CRES Template Version 1.0*
+*Last updated: 2026 | CRES Template Version 1.0*

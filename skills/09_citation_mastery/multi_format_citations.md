@@ -553,4 +553,4 @@ When converting between styles, verify:
 
 ---
 
-*Last updated: 2024 | CRES v2.0 | Skill 09: Citation Mastery*
+*Last updated: 2026 | CRES v2.0 | Skill 09: Citation Mastery*

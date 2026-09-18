@@ -420,4 +420,4 @@ audit results are available in Supplementary Table S[X].
 
 ---
 
-*Last updated: 2024 | CRES v2.0 | Skill 08: Ethics & Compliance*
+*Last updated: 2026 | CRES v2.0 | Skill 08: Ethics & Compliance*
