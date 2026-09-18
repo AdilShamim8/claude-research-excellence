@@ -11,8 +11,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 ### 1.1 Field Cartography — Frontier Scan
 
 **Domain:** Social Media and Democratic Deliberation
-**Scan Date:** 2025-02-28
-**Literature Corpus:** 1,124 papers (2004–2025)
+**Scan Date:** 2026-09-18
+**Literature Corpus:** 1,124 papers (2004–2026)
 
 | Sub-area | Saturation | Growth Rate | Key Venues | Representative Papers |
 |---|---|---|---|---|
@@ -135,8 +135,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 ║  isolate the CAUSAL MECHANISMS through which social media         ║
 ║  degrades deliberation, moving beyond correlational patterns.     ║
 ║                                                                  ║
-║  Certificate ID: CRES-NC-2025-SS-0057                            ║
-║  Date: 2025-02-28                                                ║
+║  Certificate ID: CRES-NC-2026-SS-0057                            ║
+║  Date: 2026-09-18                                                ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -165,7 +165,7 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 - Guess (2021) — (Almost) everything is correlated with political polarization; methodological caution
 - Key insight: The causal story is far more complex than the popular narrative; correlation ≠ causation
 
-**Era 4: Mechanistic and Intervention Research (2020–2025) — Current Frontier**
+**Era 4: Mechanistic and Intervention Research (2020–2026) — Current Frontier**
 - Pennycook et al. (2020) — Accuracy nudges reduce misinformation sharing; intervention-oriented
 - Mosleh et al. (2024) — Reflection interventions for sharing behavior
 - Huszár et al. (2022) — Algorithmic amplification on Twitter
@@ -255,7 +255,7 @@ pre_registration:
   title: "Unraveling the Mechanisms: How Social Media Degrades Democratic 
           Deliberation"
   registration_platform: "AsPredicted"
-  registration_date: "2025-03-15"
+  registration_date: "2026-09-18"
   registration_id: "XXXXX"
   
   hypotheses:

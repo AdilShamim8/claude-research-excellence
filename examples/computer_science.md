@@ -11,8 +11,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 ### 1.1 Field Cartography — Frontier Scan
 
 **Domain:** Large Language Model Reasoning
-**Scan Date:** 2025-02-28
-**Literature Corpus:** 847 papers (2020–2025)
+**Scan Date:** 2026-09-18
+**Literature Corpus:** 847 papers (2020–2026)
 
 | Sub-area | Saturation | Growth Rate | Key Venues | Representative Papers |
 |---|---|---|---|---|
@@ -132,8 +132,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 ║  explicit metacognitive monitoring INTO the reasoning process,   ║
 ║  as opposed to post-hoc verification or external search.         ║
 ║                                                                  ║
-║  Certificate ID: CRES-NC-2025-CS-0041                            ║
-║  Date: 2025-02-28                                                ║
+║  Certificate ID: CRES-NC-2026-CS-0041                            ║
+║  Date: 2026-09-18                                                ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -161,7 +161,7 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 - Gao et al. (2023) — Program-aided reasoning; delegating computation to external tools
 - Key insight: Reasoning quality improves with structured search and external tool use
 
-**Era 4: Integration & Metacognition (2024–2025) — Current Frontier**
+**Era 4: Integration & Metacognition (2024–2026) — Current Frontier**
 - Xiong et al. (2024) — Confidence calibration in LLMs; measuring but not regulating uncertainty during reasoning
 - Lin et al. (2024) — Reasoning under uncertainty; probabilistic frameworks
 - Pan et al. (2023) — Neurosymbolic integration; combining neural and symbolic reasoning
@@ -321,7 +321,7 @@ domain. We report 95% confidence intervals via bootstrap (10,000 iterations).
 pre_registration:
   title: "MENTOR: Metacognitive Self-Regulation for Enhanced LLM Reasoning"
   registration_platform: "OSF Regstrations"
-  registration_date: "2025-03-01"
+  registration_date: "2026-09-18"
   registration_doi: "osf.io/x7kmp"
   
   hypotheses:

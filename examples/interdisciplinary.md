@@ -11,8 +11,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 ### 1.1 Field Cartography — Cross-Domain Frontier Scan
 
 **Domain:** AI-Driven Drug Discovery (Intersection of Deep Learning + Molecular Biology + Medicinal Chemistry)
-**Scan Date:** 2025-02-28
-**Literature Corpus:** 1,847 papers across three domains (2015–2025)
+**Scan Date:** 2026-09-18
+**Literature Corpus:** 1,847 papers across three domains (2015–2026)
 
 **Domain A: Deep Learning for Molecular Design**
 
@@ -169,8 +169,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 ║  • Chemistry audience: First wet-lab validated comparison of     ║
 ║    physics-informed vs. data-driven generation                   ║
 ║                                                                  ║
-║  Certificate ID: CRES-NC-2025-ID-0012                            ║
-║  Date: 2025-02-28                                                ║
+║  Certificate ID: CRES-NC-2026-ID-0012                            ║
+║  Date: 2026-09-18                                                ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -187,8 +187,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 | Dawn | 2015–2018 | VAEs and GANs for SMILES generation | Gómez-Bombarelli et al. 2018; Kadurin et al. 2017 |
 | Maturation | 2019–2021 | Graph-based generation; RL optimization | You et al. 2018; Zhou et al. 2019 |
 | Structure | 2021–2023 | 3D-aware generation; diffusion models | Hoogeboom et al. 2022; Peng et al. 2023 |
-| Foundation | 2023–2025 | Large-scale pre-training; foundation models | Fang et al. 2024; Edwards et al. 2022 |
-| **THE GAP** | 2025 | No biophysical constraint integration | — |
+| Foundation | 2023–2026 | Large-scale pre-training; foundation models | Fang et al. 2024; Edwards et al. 2022 |
+| **THE GAP** | 2026 | No biophysical constraint integration | — |
 
 **Literature B: Biophysical Simulation for Drug Design**
 
@@ -197,8 +197,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 | Classical | 1970–2000 | Force fields; molecular dynamics basics | Karplus & McCammon 1983; Cornell et al. 1995 |
 | Acceleration | 2000–2015 | Enhanced sampling; free energy methods | Zwier & Chong 2010; Wang et al. 2015 |
 | Industrial | 2015–2020 | FEP+ for lead optimization; GPU acceleration | Cournia et al. 2017; Abel et al. 2017 |
-| AI-Enhanced | 2020–2025 | ML-accelerated MD; neural force fields | Behler 2021; Batzner et al. 2022 |
-| **THE GAP** | 2025 | No integration with generative molecular design | — |
+| AI-Enhanced | 2020–2026 | ML-accelerated MD; neural force fields | Behler 2021; Batzner et al. 2022 |
+| **THE GAP** | 2026 | No integration with generative molecular design | — |
 
 **Literature C: Medicinal Chemistry Translation**
 
@@ -207,8 +207,8 @@ This document demonstrates a complete walkthrough of the Claude Research Excelle
 | Rules-based | 1997–2010 | Lipinski's Rule of Five; property filters | Lipinski 2004; Veber et al. 2002 |
 | Prediction | 2010–2018 | QSAR; early ML for ADMET | Cherkasov et al. 2014; Waring et al. 2015 |
 | Deep Learning | 2018–2022 | GNN-based property prediction; synthesizability | Coley et al. 2018; Yang et al. 2019 |
-| Translation | 2022–2025 | Multi-objective optimization; clinical prediction | Fromer & Coley 2023; Nigam et al. 2023 |
-| **THE GAP** | 2025 | No bridge from AI generation → biophysical validation → wet-lab | — |
+| Translation | 2022–2026 | Multi-objective optimization; clinical prediction | Fromer & Coley 2023; Nigam et al. 2023 |
+| **THE GAP** | 2026 | No bridge from AI generation → biophysical validation → wet-lab | — |
 
 ### 2.2 Terminology Bridge
 
@@ -345,7 +345,7 @@ pre_registration:
   title: "BioPhysiFold: Biophysically-Informed Foundation Models for 
           Drug Discovery with Wet-Lab Validation"
   registration_platform: "OSF Registrations"
-  registration_date: "2025-03-20"
+  registration_date: "2026-09-18"
   registration_doi: "osf.io/y9kbp"
   
   hypotheses:

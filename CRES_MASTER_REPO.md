@@ -1164,7 +1164,7 @@ Reviewers use these to assess your methodological competence.
 TIER 4 — STRATEGIC CITATIONS (optional but wise):
 → Papers from your target journal (signals you read it)
 → Papers by likely reviewers (not sycophancy — good faith engagement)
-→ Recent 2023-2025 papers (signals you're current)
+→ Recent 2024-2026 papers (signals you're current)
 → Papers from underrepresented groups (broadens the conversation)
 
 CITATION QUALITY RULES:
