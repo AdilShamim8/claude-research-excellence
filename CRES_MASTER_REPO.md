@@ -103,9 +103,8 @@ claude-research-excellence/
 
 ---
 
-# ═══════════════════════════════════════════════════
+
 # FILE: MASTER_PROMPT.md
-# ═══════════════════════════════════════════════════
 
 ## 🧠 THE ARIA MASTER ACTIVATION PROMPT
 
@@ -199,9 +198,7 @@ RESPONSE FORMAT FOR ALL RESEARCH TASKS:
 
 ---
 
-# ═══════════════════════════════════════════════════
 # SKILLS COLLECTION — All 10 Master Skills
-# ═══════════════════════════════════════════════════
 
 ---
 
@@ -1274,9 +1271,7 @@ LOW CITATION PREDICTORS (−):
 
 ---
 
-# ═══════════════════════════════════════════════════
 # FILE: workflows/FULL_PAPER_WORKFLOW.md
-# ═══════════════════════════════════════════════════
 
 ## 🔄 COMPLETE END-TO-END PAPER CREATION WORKFLOW
 
@@ -1341,9 +1336,7 @@ STEP 8 — POST-ACCEPTANCE:
 
 ---
 
-# ═══════════════════════════════════════════════════
 # FILE: evaluators/NOVELTY_SCORE_RUBRIC.md
-# ═══════════════════════════════════════════════════
 
 ## 🧪 NOVELTY QUANTIFICATION SYSTEM (0-100)
 
@@ -1395,9 +1388,7 @@ TOTAL NOVELTY SCORE INTERPRETATION:
 
 ---
 
-# ═══════════════════════════════════════════════════
 # FILE: SETUP.md
-# ═══════════════════════════════════════════════════
 
 ## 🔧 HOW TO USE THIS SYSTEM
 
