@@ -53,7 +53,7 @@ This sentence serves two functions: (a) reminds the reader of the hypothesis, an
 Always report M, SD, and n for every group before the inferential statistic. This grounds the reader in the actual data before the abstraction of the test.
 
 **Sentence 3 — Inferential Statistics**
-"This difference was [significant/not significant], [test statistic](df) = X.XX, p = .XXX, [effect size] = X.XX, 95% CI [X.XX, X.XX]."
+"This difference was [significant/not significant], [test statistic] (df) = X.XX, p = .XXX, [effect size] = X.XX, 95% CI [X.XX, X.XX]."
 
 Report: test statistic, degrees of freedom, exact p-value, effect size with confidence interval. No exceptions.
 
@@ -68,9 +68,9 @@ For ANOVA, regression, or mixed models that test multiple effects:
 
 **Sentence 1**: "To test H[X] that [prediction], we conducted a [analysis name] with [IV(s)] as predictor(s) and [DV] as the outcome."
 
-**Sentence 2**: "There was a [significant/not significant] main effect of [IV], [test statistic](df) = X.XX, p = .XXX, [effect size] = X.XX."
+**Sentence 2**: "There was a [significant/not significant] main effect of [IV], [test statistic] (df) = X.XX, p = .XXX, [effect size] = X.XX."
 
-**Sentence 3** (if interaction): "This was qualified by a [significant/not significant] [IV1] × [IV2] interaction, [test statistic](df) = X.XX, p = .XXX, [effect size] = X.XX."
+**Sentence 3** (if interaction): "This was qualified by a [significant/not significant] [IV1] × [IV2] interaction, [test statistic] (df) = X.XX, p = .XXX, [effect size] = X.XX."
 
 **Sentence 4** (follow-up): "Simple effects analysis revealed that [specific comparison]: [descriptive] → [inferential]."
 

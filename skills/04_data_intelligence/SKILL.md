@@ -116,7 +116,7 @@ Each paragraph in the results section follows this exact structure:
 
 **Sentence 1 — Restate the hypothesis:** "To test whether [X predicted Y], we conducted a [test name]."
 **Sentence 2 — Describe what was found (descriptive):** "Participants in the [condition] condition (M = X.XX, SD = X.XX) scored [higher/lower] than those in the [condition] condition (M = X.XX, SD = X.XX)."
-**Sentence 3 — Report the inferential statistic:** "This difference was [significant/not significant], [test statistic](df) = X.XX, p = .XXX, [effect size] = X.XX, 95% CI [X.XX, X.XX]."
+**Sentence 3 — Report the inferential statistic:** "This difference was [significant/not significant], [test statistic] (df) = X.XX, p = .XXX, [effect size] = X.XX, 95% CI [X.XX, X.XX]."
 **Sentence 4 — Interpret the effect:** "This [supports/does not support] the hypothesis that [X], indicating that [plain language interpretation]."
 
 NO paragraph should contain:
