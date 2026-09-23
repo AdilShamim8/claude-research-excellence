@@ -302,7 +302,7 @@
   .audit-desc { font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
 
   /* Benchmark Provenance Cards */
-  .prov-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 28px; }
+  .prov-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 28px; }
   .prov-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px; padding: 26px 24px; transition: all .3s ease; position: relative; overflow: hidden; }
   .prov-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--accent), transparent); }
   .prov-card:hover { border-color: var(--accent); background: var(--bg-card-hover); transform: translateY(-3px); }
@@ -789,7 +789,7 @@
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">03</span><span class="skill-name">Methodology Architect</span></div><p class="skill-purpose">Design methodology that pre-empts reviewer critiques — experimental design, statistical rigor, reproducibility framework, and bias detection.</p><span class="skill-activation">ACTIVATE: METHODOLOGY</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">04</span><span class="skill-name">Data Intelligence</span></div><p class="skill-purpose">Transform raw results into compelling scientific findings with appropriate uncertainty quantification and publication-quality visualization.</p><span class="skill-activation">ACTIVATE: DATA</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">05</span><span class="skill-name">Writing Excellence</span></div><p class="skill-purpose">Produce rigorous, clear, compelling scientific prose — abstract mastery, introduction craft, methods precision, results power, discussion depth.</p><span class="skill-activation">ACTIVATE: WRITING</span></div>
-      <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">06</span><span class="skill-name">Quality Fortress</span></div><p class="skill-purpose">Conference-grade adversarial peer review &amp; meta-review across 10 technical dimensions, calibrated against the PeerRead dataset (14,784 human reviews) and OpenReview pools.</p><span class="skill-activation">ACTIVATE: QUALITY</span></div>
+      <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">06</span><span class="skill-name">Quality Fortress</span></div><p class="skill-purpose">Conference-grade adversarial peer review across 11 technical dimensions &amp; VLM visual figure inspection, calibrated against PeerRead (14,784 reviews; 83.8% pairwise ranking accuracy across 100 benchmark pools).</p><span class="skill-activation">ACTIVATE: QUALITY</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">07</span><span class="skill-name">Journal Strategy</span></div><p class="skill-purpose">Match paper to venue &amp; craft winning submission materials — venue selection matrix, cover letter engine, reviewer response mastery.</p><span class="skill-activation">ACTIVATE: JOURNAL</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">08</span><span class="skill-name">Ethics &amp; Compliance</span></div><p class="skill-purpose">Ensure research integrity across all dimensions — bias detection, reproducibility audit, pre-registration, IRB compliance.</p><span class="skill-activation">ACTIVATE: ETHICS</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">09</span><span class="skill-name">Citation Mastery</span></div><p class="skill-purpose">Build a strategic citation architecture — not exhaustive bibliography, but a network that positions your work and anticipates reviewers.</p><span class="skill-activation">ACTIVATE: CITATION</span></div>
@@ -856,7 +856,7 @@
     <div class="section-head reveal">
       <span class="section-num">09 — Conference-Grade Expert Review</span>
       <h2 class="section-title">Peer review at <span class="italic">area chair caliber</span></h2>
-      <p class="section-lede">Quality Fortress (Skill 06) deploys a 10-dimension audit framework and multi-agent adversarial panel calibrated against real-world benchmark datasets: 14,784 human reviews from PeerRead, live OpenReview venue pools, and the NeurIPS 21-point reproducibility benchmark.</p>
+      <p class="section-lede">Quality Fortress (Skill 06) deploys an 11-dimension audit framework, VLM multi-modal figure inspection, and multi-agent adversarial panel calibrated against real-world benchmark datasets: 14,784 human reviews from PeerRead, 100-pool pairwise validation (83.8% accuracy), AAAI 2026 reverse prompting, and the NeurIPS 21-point reproducibility benchmark.</p>
     </div>
 
     <!-- Benchmark Provenance Row -->
@@ -867,9 +867,14 @@
         <div class="prov-desc">Calibrated against Kang et al. (NAACL 2018) containing real human reviewer comments, numerical scores, and accept/reject decisions from ICLR, NeurIPS, and ACL.</div>
       </div>
       <div class="prov-card">
-        <div class="prov-metric">100%</div>
-        <div class="prov-title">OpenReview Venue Pools</div>
-        <div class="prov-desc">Relative Rank Competitiveness ($R_{comp}$) benchmarks your draft pairwise against accepted papers from target venues (Nature MI, NeurIPS, ICML, ICLR).</div>
+        <div class="prov-metric">83.8%</div>
+        <div class="prov-title">100-Pool Benchmark</div>
+        <div class="prov-desc">Empirical pairwise ranking accuracy validated on 100 pools from PeerRead ICLR 2017, accurately predicting accepted papers over rejected drafts.</div>
+      </div>
+      <div class="prov-card">
+        <div class="prov-metric">VLM</div>
+        <div class="prov-title">Visual &amp; Multi-Modal</div>
+        <div class="prov-desc">Page-snapshot layout and figure aesthetics audit evaluating subfigure alignment, 300+ DPI vector clarity, and Okabe-Ito colorblind accessibility.</div>
       </div>
       <div class="prov-card">
         <div class="prov-metric">21-Point</div>
@@ -878,10 +883,10 @@
       </div>
     </div>
 
-    <!-- 10 Dimension Grid -->
+    <!-- 11 Dimension Grid -->
     <div style="margin-top: 56px;" class="reveal">
-      <h3 style="font-family: var(--serif); font-size: 28px; margin-bottom: 8px; color: var(--text);">The 10-Dimension Technical Audit Framework</h3>
-      <p style="font-size: 15px; color: var(--text-dim); max-width: 760px; line-height: 1.7;">Every draft is audited across 10 distinct failure axes with strict evidence-anchoring requirements. Zero speculative feedback — every critique points to an exact equation, table, or section.</p>
+      <h3 style="font-family: var(--serif); font-size: 28px; margin-bottom: 8px; color: var(--text);">The 11-Dimension Technical Audit Framework</h3>
+      <p style="font-size: 15px; color: var(--text-dim); max-width: 760px; line-height: 1.7;">Every draft is audited across 11 distinct failure axes with strict evidence-anchoring requirements. Zero speculative feedback — every critique points to an exact equation, table, section, or figure.</p>
       
       <div class="audit-grid">
         <div class="audit-card">
@@ -933,6 +938,11 @@
           <span class="audit-tag">[J] Reviewer Red Flags</span>
           <div class="audit-title">Puffery &amp; "First Ever" Eradication</div>
           <div class="audit-desc">Identifies phrase-level triggers ("we are the first", "obviously", "drastic leap") that provoke reviewer skepticism and desk rejects.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[K] Visual Aesthetics (VLM)</span>
+          <div class="audit-title">Subfigure Alignment &amp; Accessibility</div>
+          <div class="audit-desc">Conducts multi-modal visual inspection of figures and page snapshots. Audits subfigure labels (a, b), axis font legibility at column width, 300+ DPI vector clarity, and Okabe-Ito colorblind accessibility.</div>
         </div>
       </div>
     </div>
