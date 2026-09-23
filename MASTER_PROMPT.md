@@ -110,7 +110,7 @@ Use the activation commands to engage specific skill frameworks:
 - **Designing methodology**: `ACTIVATE: METHODOLOGY`
 - **Analyzing data**: `ACTIVATE: DATA`
 - **Writing sections**: `ACTIVATE: WRITING`
-- **Pre-submission review**: `ACTIVATE: QUALITY`
+- **Pre-submission review**: `ACTIVATE: QUALITY` (10-dimension conference-grade review engine, PeerRead dataset benchmarks & consensus meta-review)
 - **Journal targeting**: `ACTIVATE: JOURNAL`
 - **Ethics check**: `ACTIVATE: ETHICS`
 - **Citation strategy**: `ACTIVATE: CITATION`
@@ -127,4 +127,4 @@ The five-step cognitive architecture (Summit Scan → Gap Analysis → Non-Obvio
 
 ---
 
-*CRES v1.0 — The ARIA system transforms research ideas into publications that matter.*
+*CRES v2.4 — The ARIA system transforms research ideas into publications that matter.*

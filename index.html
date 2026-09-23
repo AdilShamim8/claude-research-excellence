@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Claude Research Excellence System (CRES) — Elite AI-Powered Research Framework</title>
-<meta name="description" content="The world's most advanced AI-powered research paper creation framework — built for the top 0.0001%. A comprehensive, skill-based framework by Adil Shamim." />
+<title>Claude Research Excellence System (CRES v2.4) — Elite AI-Powered Research Framework</title>
+<meta name="description" content="The world's most advanced AI-powered research paper creation framework — engineered for the top 0.0001%. Built for Nature, Science, NeurIPS, ICML, ICLR, IEEE, and ACM by Adil Shamim." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -293,11 +293,41 @@
   .footer-bottom p { font-size: 12px; color: var(--text-mute); letter-spacing: .5px; }
   .footer-bottom .version { font-family: var(--mono); font-size: 12px; color: var(--accent); border: 1px solid var(--border); padding: 6px 12px; border-radius: 3px; }
 
+  /* Audit Dimensions Grid */
+  .audit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 28px; }
+  .audit-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px; padding: 22px 24px; transition: all .3s ease; position: relative; }
+  .audit-card:hover { border-color: var(--accent-deep); transform: translateY(-2px); background: var(--bg-card-hover); }
+  .audit-tag { font-family: var(--mono); font-size: 11px; color: var(--accent); background: rgba(212,165,116,0.1); border: 1px solid rgba(212,165,116,0.25); padding: 3px 8px; border-radius: 3px; display: inline-block; margin-bottom: 8px; }
+  .audit-title { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+  .audit-desc { font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
+
+  /* Benchmark Provenance Cards */
+  .prov-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 28px; }
+  .prov-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px; padding: 26px 24px; transition: all .3s ease; position: relative; overflow: hidden; }
+  .prov-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--accent), transparent); }
+  .prov-card:hover { border-color: var(--accent); background: var(--bg-card-hover); transform: translateY(-3px); }
+  .prov-metric { font-family: var(--serif); font-size: 38px; color: var(--accent); font-weight: 600; line-height: 1; margin-bottom: 10px; }
+  .prov-title { font-family: var(--serif); font-size: 19px; color: var(--text); font-weight: 600; margin-bottom: 8px; }
+  .prov-desc { font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
+
+  /* Evaluator Scorecard Grid */
+  .eval-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 36px; }
+  .eval-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px; padding: 28px 22px; transition: all .35s ease; position: relative; overflow: hidden; }
+  .eval-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .35s ease; }
+  .eval-card:hover { transform: translateY(-4px); border-color: var(--accent); background: var(--bg-card-hover); }
+  .eval-card:hover::before { transform: scaleX(1); }
+  .eval-thresh { font-family: var(--mono); font-size: 12px; color: var(--green); margin-bottom: 14px; display: inline-block; background: rgba(143,188,143,0.08); border: 1px solid rgba(143,188,143,0.25); padding: 4px 10px; border-radius: 3px; }
+  .eval-name { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
+  .eval-desc { font-size: 13px; color: var(--text-dim); line-height: 1.6; margin-bottom: 16px; }
+  .eval-weights { list-style: none; border-top: 1px solid var(--border-soft); padding-top: 12px; font-size: 12px; color: var(--text-mute); }
+  .eval-weights li { padding: 4px 0; display: flex; justify-content: space-between; }
+  .eval-weights li span:last-child { color: var(--accent-bright); font-family: var(--mono); font-size: 11px; }
+
   @media (max-width: 960px) {
     .nav-links { display: none; }
     .menu-toggle { display: block; }
     .overview-grid, .arch-wrap, .aria-grid, .dd-grid { grid-template-columns: 1fr; gap: 48px; }
-    .steps, .workflow-grid, .skills-grid, .dodont, .trouble-grid { grid-template-columns: 1fr; }
+    .steps, .workflow-grid, .skills-grid, .dodont, .trouble-grid, .audit-grid, .prov-grid, .eval-grid { grid-template-columns: 1fr; }
     .footer-top { grid-template-columns: 1fr; gap: 40px; }
     .hero-meta { gap: 32px; }
     .jt-head, .jt-row { grid-template-columns: 1fr; gap: 4px; }
@@ -335,6 +365,8 @@
       <a href="#workflows">Workflows</a>
       <a href="#roadmap">Roadmap</a>
       <a href="#skills">Skills</a>
+      <a href="#quality">Expert Review</a>
+      <a href="#evaluators">Evaluators</a>
       <a href="#journals">Journals</a>
       <a href="https://github.com/AdilShamim8/claude-research-excellence" target="_blank" rel="noopener" class="nav-cta">View Repo</a>
     </div>
@@ -347,12 +379,12 @@
   <div class="hero-inner">
     <div class="eyebrow">Claude Research Excellence System</div>
     <h1>The framework for<br><span class="italic">research that refuses</span><br>to settle for "good enough."</h1>
-    <p class="tagline">The world's most advanced AI-powered research paper creation framework — built for the top 0.0001%.</p>
+    <p class="tagline">The world's most advanced AI-powered research paper creation framework — engineered for the top 0.0001%.</p>
     <div class="hero-meta">
-      <div><span class="label">Version</span><span class="value">CRES v1.0</span></div>
+      <div><span class="label">Version</span><span class="value">CRES v2.4</span></div>
       <div><span class="label">Core System</span><span class="value">ARIA v3.1</span></div>
       <div><span class="label">Skills</span><span class="value">10 Modular</span></div>
-      <div><span class="label">Workflows</span><span class="value">4 End-to-End</span></div>
+      <div><span class="label">Review Engine</span><span class="value">10-Dim Audit</span></div>
       <div><span class="label">Author</span><span class="value">Adil Shamim</span></div>
     </div>
     <div class="hero-actions">
@@ -379,8 +411,8 @@
       </div>
       <div class="stat-grid reveal">
         <div class="stat"><div class="num">10</div><div class="desc">Modular Skills</div></div>
-        <div class="stat"><div class="num">4</div><div class="desc">End-to-End Workflows</div></div>
-        <div class="stat"><div class="num">7</div><div class="desc">Journal Templates</div></div>
+        <div class="stat"><div class="num">10</div><div class="desc">Audit Dimensions</div></div>
+        <div class="stat"><div class="num">14.7k</div><div class="desc">PeerRead Benchmarks</div></div>
         <div class="stat"><div class="num">4</div><div class="desc">Quantitative Evaluators</div></div>
       </div>
     </div>
@@ -712,7 +744,7 @@
 │   ├── <span class="dir">03_methodology_architect/</span>          <span class="arrow">←</span> <span class="comment">Research design engine</span>
 │   ├── <span class="dir">04_data_intelligence/</span>              <span class="arrow">←</span> <span class="comment">Data strategy system</span>
 │   ├── <span class="dir">05_writing_excellence/</span>             <span class="arrow">←</span> <span class="comment">Writing mastery system</span>
-│   ├── <span class="dir">06_quality_fortress/</span>               <span class="arrow">←</span> <span class="comment">Multi-layer adversarial review</span>
+│   ├── <span class="dir">06_quality_fortress/</span>               <span class="arrow">←</span> <span class="comment">10-dim conference review &amp; PeerRead benchmarks</span>
 │   ├── <span class="dir">07_journal_strategy/</span>               <span class="arrow">←</span> <span class="comment">Publication targeting system</span>
 │   ├── <span class="dir">08_ethics_compliance/</span>              <span class="arrow">←</span> <span class="comment">Research ethics &amp; integrity</span>
 │   ├── <span class="dir">09_citation_mastery/</span>               <span class="arrow">←</span> <span class="comment">Citation strategy system</span>
@@ -757,7 +789,7 @@
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">03</span><span class="skill-name">Methodology Architect</span></div><p class="skill-purpose">Design methodology that pre-empts reviewer critiques — experimental design, statistical rigor, reproducibility framework, and bias detection.</p><span class="skill-activation">ACTIVATE: METHODOLOGY</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">04</span><span class="skill-name">Data Intelligence</span></div><p class="skill-purpose">Transform raw results into compelling scientific findings with appropriate uncertainty quantification and publication-quality visualization.</p><span class="skill-activation">ACTIVATE: DATA</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">05</span><span class="skill-name">Writing Excellence</span></div><p class="skill-purpose">Produce rigorous, clear, compelling scientific prose — abstract mastery, introduction craft, methods precision, results power, discussion depth.</p><span class="skill-activation">ACTIVATE: WRITING</span></div>
-      <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">06</span><span class="skill-name">Quality Fortress</span></div><p class="skill-purpose">Subject your paper to adversarial review before submission — multi-layer peer review simulation, logic validation, novelty stress test.</p><span class="skill-activation">ACTIVATE: QUALITY</span></div>
+      <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">06</span><span class="skill-name">Quality Fortress</span></div><p class="skill-purpose">Conference-grade adversarial peer review &amp; meta-review across 10 technical dimensions, calibrated against the PeerRead dataset (14,784 human reviews) and OpenReview pools.</p><span class="skill-activation">ACTIVATE: QUALITY</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">07</span><span class="skill-name">Journal Strategy</span></div><p class="skill-purpose">Match paper to venue &amp; craft winning submission materials — venue selection matrix, cover letter engine, reviewer response mastery.</p><span class="skill-activation">ACTIVATE: JOURNAL</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">08</span><span class="skill-name">Ethics &amp; Compliance</span></div><p class="skill-purpose">Ensure research integrity across all dimensions — bias detection, reproducibility audit, pre-registration, IRB compliance.</p><span class="skill-activation">ACTIVATE: ETHICS</span></div>
       <div class="skill-card reveal"><div class="skill-head"><span class="skill-num">09</span><span class="skill-name">Citation Mastery</span></div><p class="skill-purpose">Build a strategic citation architecture — not exhaustive bibliography, but a network that positions your work and anticipates reviewers.</p><span class="skill-activation">ACTIVATE: CITATION</span></div>
@@ -818,11 +850,165 @@
   </div>
 </section>
 
+<!-- EXPERT REVIEW -->
+<section id="quality" class="deepdive">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">09 — Conference-Grade Expert Review</span>
+      <h2 class="section-title">Peer review at <span class="italic">area chair caliber</span></h2>
+      <p class="section-lede">Quality Fortress (Skill 06) deploys a 10-dimension audit framework and multi-agent adversarial panel calibrated against real-world benchmark datasets: 14,784 human reviews from PeerRead, live OpenReview venue pools, and the NeurIPS 21-point reproducibility benchmark.</p>
+    </div>
+
+    <!-- Benchmark Provenance Row -->
+    <div class="prov-grid reveal">
+      <div class="prov-card">
+        <div class="prov-metric">14,784</div>
+        <div class="prov-title">PeerRead Corpus</div>
+        <div class="prov-desc">Calibrated against Kang et al. (NAACL 2018) containing real human reviewer comments, numerical scores, and accept/reject decisions from ICLR, NeurIPS, and ACL.</div>
+      </div>
+      <div class="prov-card">
+        <div class="prov-metric">100%</div>
+        <div class="prov-title">OpenReview Venue Pools</div>
+        <div class="prov-desc">Relative Rank Competitiveness ($R_{comp}$) benchmarks your draft pairwise against accepted papers from target venues (Nature MI, NeurIPS, ICML, ICLR).</div>
+      </div>
+      <div class="prov-card">
+        <div class="prov-metric">21-Point</div>
+        <div class="prov-title">NeurIPS Reproducibility</div>
+        <div class="prov-desc">Official Pineau et al. reproducibility protocol auditing assumptions, mathematical derivations, random seeds, error bars, and dataset licenses.</div>
+      </div>
+    </div>
+
+    <!-- 10 Dimension Grid -->
+    <div style="margin-top: 56px;" class="reveal">
+      <h3 style="font-family: var(--serif); font-size: 28px; margin-bottom: 8px; color: var(--text);">The 10-Dimension Technical Audit Framework</h3>
+      <p style="font-size: 15px; color: var(--text-dim); max-width: 760px; line-height: 1.7;">Every draft is audited across 10 distinct failure axes with strict evidence-anchoring requirements. Zero speculative feedback — every critique points to an exact equation, table, or section.</p>
+      
+      <div class="audit-grid">
+        <div class="audit-card">
+          <span class="audit-tag">[A] Logic &amp; Argumentation</span>
+          <div class="audit-title">Deductive Validity &amp; Boundary Conditions</div>
+          <div class="audit-desc">Audits Toulmin argument structures, falsifiability of hypotheses, and prevents correlational claims from masquerading as causal mechanisms.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[B] Empirical Rigor &amp; Consistency</span>
+          <div class="audit-title">Cross-Table Numerical Verification</div>
+          <div class="audit-desc">Cross-references numbers across Abstract, Tables, and Figures. Flags arithmetic mismatches, missing seeds, and untuned baseline comparisons.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[C] Writing Momentum</span>
+          <div class="audit-title">Cognitive Density &amp; Active Syntax</div>
+          <div class="audit-desc">Eliminates passive bloat, ensures topic-stress alignment, and guarantees the central thesis is crystal clear on first read.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[D] Citation Cartography</span>
+          <div class="audit-title">Balanced Lineage &amp; Anti-Hallucination</div>
+          <div class="audit-desc">Audits against S2ORC citation graphs to ensure seminal works and 2024–2026 baselines are properly situated without citation gaps.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[E] Mathematical Integrity</span>
+          <div class="audit-title">Symbol Collision &amp; Derivation Flow</div>
+          <div class="audit-desc">Scans for overloaded notation (e.g. θ vs τ collisions), dimensional consistency, and complete proof continuity between text and appendix.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[F] Double-Blind Compliance</span>
+          <div class="audit-title">Anonymity &amp; Metadata Sanitization</div>
+          <div class="audit-desc">Scans for deanonymizing repository links, author self-citations in first person, institutional markers, and PDF document metadata.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[G] Venue Standards</span>
+          <div class="audit-title">Page Budgets &amp; Mandatory Disclosures</div>
+          <div class="audit-desc">Enforces strict publisher formatting (Nature, IEEE, ACM, NeurIPS), compute resource accounting, and ethics/broader impact statements.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[H] Academic Tone Purity</span>
+          <div class="audit-title">Anti-AI Smell &amp; Boilerplate Purge</div>
+          <div class="audit-desc">Strips out telltale LLM boilerplate ("delve", "testament", "pivotal", "furthermore"), marketing buzzwords, and unsubstantiated superlatives.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[I] Narrative Hierarchy</span>
+          <div class="audit-title">Thesis Alignment Across Sections</div>
+          <div class="audit-desc">Verifies that every promise made in the Introduction is fulfilled in the Results and defended against boundary conditions in the Discussion.</div>
+        </div>
+        <div class="audit-card">
+          <span class="audit-tag">[J] Reviewer Red Flags</span>
+          <div class="audit-title">Puffery &amp; "First Ever" Eradication</div>
+          <div class="audit-desc">Identifies phrase-level triggers ("we are the first", "obviously", "drastic leap") that provoke reviewer skepticism and desk rejects.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVALUATORS -->
+<section id="evaluators">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">10 — Quantitative Evaluators</span>
+      <h2 class="section-title">Four quantitative <span class="italic">0–100 rubrics</span></h2>
+      <p class="section-lede">Prior to journal submission, CRES audits manuscripts using four independent, weighted evaluation engines. Every dimension features concrete point breakdowns and hard go/no-go thresholds.</p>
+    </div>
+
+    <div class="eval-grid reveal">
+      <div class="eval-card">
+        <span class="eval-thresh">Target: ≥ 70 / 100</span>
+        <div class="eval-name">Novelty Score</div>
+        <div class="eval-desc">Evaluates originality and non-obviousness across 5 weighted dimensions calibrated against top-tier conference paradigms.</div>
+        <ul class="eval-weights">
+          <li><span>Conceptual Novelty</span><span>25%</span></li>
+          <li><span>Methodological Novelty</span><span>25%</span></li>
+          <li><span>Empirical Novelty</span><span>20%</span></li>
+          <li><span>Translational Utility</span><span>15%</span></li>
+          <li><span>Interdisciplinary Synthesis</span><span>15%</span></li>
+        </ul>
+      </div>
+
+      <div class="eval-card">
+        <span class="eval-thresh">Target: ≥ 75 / 100</span>
+        <div class="eval-name">Rigor Rubric</div>
+        <div class="eval-desc">Assesses causal identification, statistical power, multiple comparison corrections, and open science artifacts.</div>
+        <ul class="eval-weights">
+          <li><span>Internal &amp; External Validity</span><span>25%</span></li>
+          <li><span>Statistical Power &amp; Inference</span><span>25%</span></li>
+          <li><span>Reproducibility &amp; Open Science</span><span>20%</span></li>
+          <li><span>Baseline Fairness &amp; Controls</span><span>15%</span></li>
+          <li><span>Boundary Sensitivity</span><span>15%</span></li>
+        </ul>
+      </div>
+
+      <div class="eval-card">
+        <span class="eval-thresh">Target: ≥ 80 / 100</span>
+        <div class="eval-name">Clarity Analyzer</div>
+        <div class="eval-desc">Evaluates scientific communication, rhetorical momentum, cognitive load, and 30-second self-contained visual grammar.</div>
+        <ul class="eval-weights">
+          <li><span>Macro-Structure Momentum</span><span>20%</span></li>
+          <li><span>Sentence Micro-Clarity</span><span>20%</span></li>
+          <li><span>Cognitive Load Density</span><span>15%</span></li>
+          <li><span>Visual Grammar &amp; Figures</span><span>15%</span></li>
+          <li><span>Executive Abstract Calibration</span><span>15%</span></li>
+        </ul>
+      </div>
+
+      <div class="eval-card">
+        <span class="eval-thresh">Target: ≥ 75 / 100</span>
+        <div class="eval-name">Impact Predictor</div>
+        <div class="eval-desc">Projects 24–60 month citation trajectory, field-shaping longevity, cross-disciplinary diffusion, and policy adoption.</div>
+        <ul class="eval-weights">
+          <li><span>Theoretical Longevity</span><span>25%</span></li>
+          <li><span>Tool &amp; Method Adoption</span><span>25%</span></li>
+          <li><span>Cross-Disciplinary Diffusion</span><span>20%</span></li>
+          <li><span>Policy &amp; Industrial Utility</span><span>15%</span></li>
+          <li><span>Obsolescence Robustness</span><span>15%</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- MATRIX -->
 <section id="matrix" class="matrix-section">
   <div class="container">
     <div class="section-head reveal">
-      <span class="section-num">09 — Skill Combination Matrix</span>
+      <span class="section-num">11 — Skill Combination Matrix</span>
       <h2 class="section-title">Compose skills for <span class="italic">every situation</span></h2>
       <p class="section-lede">Different research situations call for different skill combinations. The matrix below shows the recommended chains for the most common scenarios — drawn from the official SETUP.md guide.</p>
     </div>
@@ -845,7 +1031,7 @@
 <section id="journals">
   <div class="container">
     <div class="section-head reveal">
-      <span class="section-num">10 — Journal Quick Reference</span>
+      <span class="section-num">12 — Journal Quick Reference</span>
       <h2 class="section-title">Where the <span class="italic">top 0.0001%</span> publish</h2>
       <p class="section-lede">Accept rates, impact factors, and turnaround times for the venues CRES targets. Use this as input to Skill 07 (Journal Strategy) when scoring candidate journals on the five-dimension venue selection matrix.</p>
     </div>
@@ -897,7 +1083,7 @@
 <section id="best-practices" class="quickstart">
   <div class="container">
     <div class="section-head reveal">
-      <span class="section-num">11 — Best Practices</span>
+      <span class="section-num">13 — Best Practices</span>
       <h2 class="section-title">What to do. <span class="italic">What never to do.</span></h2>
       <p class="section-lede">Distilled from the official SETUP.md. These aren't suggestions — they're the failure modes that the framework exists to prevent.</p>
     </div>
@@ -936,7 +1122,7 @@
 <section id="troubleshooting">
   <div class="container">
     <div class="section-head reveal">
-      <span class="section-num">12 — Troubleshooting</span>
+      <span class="section-num">14 — Troubleshooting</span>
       <h2 class="section-title">When the system <span class="italic">pushes back</span></h2>
       <p class="section-lede">Common failure patterns and their fixes — drawn from the official SETUP.md. If a phase feels stuck, the answer is almost always to go deeper into a sub-phase, not to skip ahead.</p>
     </div>
@@ -990,6 +1176,8 @@
           <li><a href="#workflows">Workflows</a></li>
           <li><a href="#roadmap">Roadmap</a></li>
           <li><a href="#skills">The 10 Skills</a></li>
+          <li><a href="#quality">Expert Review</a></li>
+          <li><a href="#evaluators">Quantitative Evaluators</a></li>
           <li><a href="#journals">Journal Reference</a></li>
           <li><a href="#best-practices">Best Practices</a></li>
         </ul>
@@ -1008,7 +1196,7 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Claude Research Excellence System. An open framework for elite research.</p>
-      <span class="version">CRES v1.0 · ARIA v3.1</span>
+      <span class="version">CRES v2.4 · ARIA v3.1</span>
     </div>
   </div>
 </footer>

@@ -81,7 +81,7 @@ claude-research-excellence/
 │   ├── 03_methodology_architect/          ← Experimental design & threat modeling
 │   ├── 04_data_intelligence/              ← Statistical analysis & visual grammar
 │   ├── 05_writing_excellence/             ← Publication-grade scientific prose
-│   ├── 06_quality_fortress/               ← Adversarial peer review simulation
+│   ├── 06_quality_fortress/               ← Conference-grade peer review, 10-dim audit & PeerRead calibration
 │   ├── 07_journal_strategy/               ← Venue selection & cover letter strategy
 │   ├── 08_ethics_compliance/              ← Research integrity, IRB & compliance
 │   ├── 09_citation_mastery/               ← Citation cartography & balance
@@ -128,7 +128,7 @@ Each skill directory contains an authoritative `SKILL.md` along with specialized
 | **03** | [Methodology Architect](skills/03_methodology_architect/SKILL.md) | Build bulletproof experimental designs & pre-registrations | `ACTIVATE: METHODOLOGY` | Threat-to-Validity Matrix, Statistical Power Plan |
 | **04** | [Data Intelligence](skills/04_data_intelligence/SKILL.md) | Extract deep statistical signal & design publication figures | `ACTIVATE: DATA` | Effect Size Architecture, Publication Figure Specs |
 | **05** | [Writing Excellence](skills/05_writing_excellence/SKILL.md) | Draft prose that compels reviewers from line one | `ACTIVATE: WRITING` | Abstract Blueprint, Introduction Arc, Discussion Defense |
-| **06** | [Quality Fortress](skills/06_quality_fortress/SKILL.md) | Simulate hostile peer review & stress-test arguments | `ACTIVATE: QUALITY` | 4-Reviewer Audit, Rebuttal Strategy, Revision Protocol |
+| **06** | [Quality Fortress](skills/06_quality_fortress/SKILL.md) | Conference-grade peer review, 10-dimension audit & PeerRead calibration | `ACTIVATE: QUALITY` | 10-Dim Audit, PeerRead Relative Rank, Consensus Meta-Review, Reproducibility Report |
 | **07** | [Journal Strategy](skills/07_journal_strategy/SKILL.md) | Optimize venue selection, editorial pitch & cover letters | `ACTIVATE: JOURNAL` | Venue Decision Matrix, Editor Cover Letter Blueprint |
 | **08** | [Ethics & Compliance](skills/08_ethics_compliance/SKILL.md) | Guarantee integrity, transparency, IRB, and dual-use safety | `ACTIVATE: ETHICS` | Compliance Checklist, Data Management Plan (FAIR) |
 | **09** | [Citation Mastery](skills/09_citation_mastery/SKILL.md) | Engineer comprehensive, balanced, and strategic citations | `ACTIVATE: CITATION` | Citation Balance Audit, Recency & Lineage Mapping |
@@ -192,6 +192,53 @@ CRES provides a dedicated quantitative evaluation suite located in [`evaluators/
   - *Translational & Policy Utility (15%)*: Industrial, clinical, or governmental application.
   - *Field-Shaping Longevity & Robustness (15%)*: Resilience against rapid technological obsolescence.
 - **Scoring**: 0–100 scale. High-impact trajectory: **$\ge 75/100$**.
+
+---
+
+## Conference-Grade Expert Paper Reviewer (Skill 06 & Real-World Datasets)
+
+[`skills/06_quality_fortress/`](skills/06_quality_fortress/) provides a conference-caliber paper review and meta-review system engineered to evaluate manuscripts at the level of senior area chairs and editorial boards. Grounded strictly in **real-world peer review datasets and empirical corpora**, it eliminates superficial AI summaries and conducts evidence-anchored technical audits:
+
+```
+                  ┌───────────────────────────────┐
+                  │    MANUSCRIPT SUBMISSION      │
+                  └───────────────┬───────────────┘
+                                  │
+         ┌────────────────────────┼────────────────────────┐
+         ▼                        ▼                        ▼
+  SECURITY SCAN            10-DIMENSION AUDIT       EMPIRICAL DATASET
+• Prompt-injection       • Logic & Claims         • PeerRead (14,784 reviews)
+• Double-blind leaks     • Cross-table consistency• OpenReview venue pools
+• Metadata sanitation    • Math notation clashes  • NeurIPS 21-pt checklist
+         │                        │                        │
+         └────────────────────────┼────────────────────────┘
+                                  │
+                                  ▼
+                 ┌─────────────────────────────────┐
+                 │  MULTI-AGENT CONSENSUS MATRIX   │
+                 │   & RELATIVE RANK SCORE (R_comp)│
+                 └─────────────────────────────────┘
+```
+
+### Empirical Dataset Provenance & Benchmarking
+1. **PeerRead Dataset** (*Kang et al., NAACL 2018, arXiv:1804.09632*): 14,784 scientific research papers with real human expert reviews, numerical scoring distributions, and official accept/reject decisions from *ICLR (2017)*, *NeurIPS (2013–2017)*, and *ACL (2017)*.
+2. **OpenReview Live Venue Pools**: Real-world accepted/rejected manuscript pools for relative rank calibration across *ICLR*, *NeurIPS*, and *ICML*.
+3. **NeurIPS Official Reproducibility Benchmark** (*Pineau et al., JMLR 2021*): Standardized 21-point checklist auditing assumptions, proofs, compute resources, error bars, and dataset splits.
+4. **S2ORC & SciCite** (*Lo et al., ACL 2020; Cohan et al., NAACL 2019*): 81M+ papers establishing rigorous citation intent and attribution cartography.
+
+### The 10-Dimension Audit Framework
+- **[A] Logic & Argumentation**: Deductive argument chains, boundary condition stress-testing, and causal license.
+- **[B] Empirical Rigor & Cross-Table Consistency**: Numerical verification across Abstract, Figures, and Tables with standard deviation/CI audits.
+- **[C] Writing Quality & Rhetorical Momentum**: Topic sentence clarity, cognitive density, and active syntax.
+- **[D] Citation Cartography & Attribution**: Balanced 2024–2026 literature coverage and hallucination screening.
+- **[E] Mathematical & Notational Integrity**: Variable definitions, symbol collision checks ($\tau$ vs $\theta$), and derivation continuity.
+- **[F] Double-Blind & Anonymity Compliance**: Sanitization of institutional traces, repository links, and author self-references.
+- **[G] Venue Formatting & Standards**: Page budget, margin compliance, and mandatory ethics/reproducibility sections.
+- **[H] Academic Tone Purity & Anti-AI Smell**: Eradication of formulaic LLM filler words ("delve", "testament", "pivotal") and hollow puffery.
+- **[I] Narrative Structure & Hierarchy**: Coherence across Intro $\rightarrow$ Method $\rightarrow$ Results $\rightarrow$ Discussion.
+- **[J] Reviewer Red Flags & Puffery**: Removal of "first ever", "drastically superior", "obviously", and unverified supremacy claims.
+
+See [`skills/06_quality_fortress/expert_paper_reviewer.md`](skills/06_quality_fortress/expert_paper_reviewer.md) for full operational guides and real-world before/after case studies.
 
 ---
 
