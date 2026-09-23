@@ -100,4 +100,4 @@ See `workflows/RAPID_PUBLICATION.md` for the compressed protocol.
 
 ---
 
-*CRES v1.0 — Setup guide for the world's most advanced research paper creation framework.*
+*CRES v2.4 — Setup guide for the world's most advanced research paper creation framework.*

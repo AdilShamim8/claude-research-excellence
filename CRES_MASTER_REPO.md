@@ -1396,7 +1396,7 @@ TOTAL NOVELTY SCORE INTERPRETATION:
 
 ---
 
-*CRES v1.0 — Built for researchers who refuse to settle for "good enough."*
+*CRES v2.4 — Built for researchers who refuse to settle for "good enough."*
 *Every skill prompt in this repository represents the distillation of 
 thousands of successful publications, reviewer reports, and editorial decisions.*
 
