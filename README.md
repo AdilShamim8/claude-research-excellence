@@ -392,5 +392,5 @@ If CRES enhances your scientific research, methodology design, or publication wo
 </div>
 
 <p align="center">
-  <sub>CRES v2.4 • Engineered for researchers who refuse to settle for "good enough." • Current as of September 18, 2026</sub>
+  <sub>CRES v2.4 • Engineered for researchers who refuse to settle for "good enough." • Current as of September 2026</sub>
 </p>
