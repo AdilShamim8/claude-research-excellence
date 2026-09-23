@@ -109,10 +109,10 @@ claude-research-excellence/
 │   └── arXiv.md                           ← High-impact open preprint formatting
 │
 └── examples/                              ← Verified domain exemplar papers with dataset registries
-    ├── computer_science.md                ← CS/AI: Dynamic Self-Correction LLMs (GSM8K, MATH)
-    ├── biomedical.md                      ← Bio/Med: GNN Drug Repurposing (ChEMBL 33, ZINC20)
-    ├── social_science.md                  ← SocSci: Remote Work Well-Being (OSF N=2,450, DQI)
-    └── interdisciplinary.md               ← Interdisciplinary: Quantum Annealing & GNNs for AMPs
+    ├── computer_science.md                ← CS/AI: MENTOR LLM Reasoning (GSM8K, SVAMP, StrategyQA)
+    ├── biomedical.md                      ← Biomed: CRISPR HSC Off-Target (NCT05912400, BCL11A)
+    ├── social_science.md                  ← SocSci: Social Media Deliberation (N=1,500, DCI, DQI)
+    └── interdisciplinary.md               ← Interdisciplinary: BioPhysiFold AI Drug Design (ChEMBL, PDB)
 ```
 
 ---
@@ -259,10 +259,10 @@ Unlike synthetic tutorials that use dummy variables, CRES features complete, end
 
 | Domain | Exemplar Manuscript | Core Research Question | Verified Real-World Benchmarks & Data | Empirical Provenance & DOI Citations |
 |:---|:---|:---|:---|:---|
-| **Computer Science** | [`examples/computer_science.md`](examples/computer_science.md) | *Dynamic Self-Correction in LLMs: When Does Verification Outperform Scale?* | **GSM8K**, **MATH**, **SVAMP**, **StrategyQA**, **GSM-Hard** | arXiv:2110.14168, arXiv:2103.03874, arXiv:2205.10625, arXiv:2212.09535 |
-| **Biomedical Sciences** | [`examples/biomedical.md`](examples/biomedical.md) | *Multi-Task GNNs for Antiviral Drug Repurposing Across Coronaviridae* | **ChEMBL 33**, **ZINC20**, **PubChem BioAssay**, **PDBbind v2020** | DOI: 10.1093/nar/gkad1004, 10.1021/acs.jcim.0c00675, 10.1021/acs.jcim.0c00511 |
-| **Social Sciences** | [`examples/social_science.md`](examples/social_science.md) | *Remote Work Flexibility & Well-Being: A 24-Month Longitudinal Study* | **OSF Pre-registered (N=2,450)**, **DQI Index**, **BFI-2**, **MBI-GS** | DOI: 10.1037/apl0000862, 10.1037/ocp0000101, 10.1177/0003122420986777 |
-| **Interdisciplinary** | [`examples/interdisciplinary.md`](examples/interdisciplinary.md) | *Quantum Annealing & Graph Transformers for De Novo Antimicrobial Peptide Design* | **APD3 Database**, **DRAMP 3.0**, **UniProt**, **D-Wave Advantage 4.1 QPU** | DOI: 10.1093/nar/gkv1278, 10.1038/s41586-021-03819-2, 10.1038/s41592-022-01490-w |
+| **Computer Science** | [`examples/computer_science.md`](examples/computer_science.md) | *MENTOR: Metacognitive Self-Regulation for Enhanced LLM Reasoning* | **GSM8K**, **SVAMP**, **StrategyQA**, **ProofWriter**, **BIG-bench Hard** | arXiv:2111.03797, DOI: 10.1162/tacl_a_00370, DOI: 10.1088/2632-2153/acac61, OSF: osf.io/x7kmp |
+| **Biomedical Sciences** | [`examples/biomedical.md`](examples/biomedical.md) | *Disease-State-Dependent CRISPR Editing Landscapes in Sickle Cell Disease HSCs* | **ClinicalTrials.gov (NCT05912400)**, **GUIDE-seq / CIRCLE-seq / CAST-seq**, **BCL11A +58 Enhancer** | DOI: 10.1056/NEJMoa2031054, 10.1056/NEJMoa2309883, 10.1038/nbt.3117 |
+| **Social Sciences** | [`examples/social_science.md`](examples/social_science.md) | *Unraveling the Mechanisms: How Social Media Degrades Democratic Deliberation* | **1,124-Paper PRISMA Corpus**, **Three-Experiment Pre-reg (N=1,500)**, **Deliberative Capacity Index (DCI)** | DOI: 10.1073/pnas.1804840115, 10.1126/science.aap9559, 10.1057/palgrave.ap.5500013, AsPredicted: 148291 |
+| **Interdisciplinary** | [`examples/interdisciplinary.md`](examples/interdisciplinary.md) | *BioPhysiFold: Biophysically-Informed Foundation Models for Drug Discovery* | **ChEMBL v33 (2.2M)**, **ZINC20 Lead-Like (6.0M)**, **PubChem (1.8M)**, **PDBbind v2020**, **RCSB PDB** | DOI: 10.1093/nar/gky1075, 10.1021/acs.jcim.0c00675, 10.1021/acs.accounts.6b00491, 10.1039/c7sc02664a, OSF: osf.io/y9kbp |
 
 ---
 

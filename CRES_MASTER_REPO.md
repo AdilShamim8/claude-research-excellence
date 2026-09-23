@@ -81,13 +81,13 @@ claude-research-excellence/
 │   └── REPLICATION_STUDY.md             ← Replication & extension protocol
 │
 ├── 📝 templates/
-│   ├── IEEE/                             ← IEEE journal & conference formats
-│   ├── ACM/                              ← ACM DL format templates
-│   ├── Nature_Family/                    ← Nature, Nature Medicine, etc.
-│   ├── Science/                          ← Science & Science Advances
-│   ├── NeurIPS_ICML_ICLR/               ← Top ML conference templates
-│   ├── arXiv/                            ← Preprint format
-│   └── Springer/                         ← Springer journal templates
+│   ├── Nature_Family.md                  ← Nature, Nature Medicine, etc.
+│   ├── Science.md                        ← Science & Science Advances
+│   ├── NeurIPS_ICML_ICLR.md              ← Top ML conference templates
+│   ├── IEEE.md                           ← IEEE journal & conference formats
+│   ├── ACM.md                            ← ACM DL format templates
+│   ├── Springer.md                       ← Springer journal templates
+│   └── arXiv.md                          ← Preprint format
 │
 ├── 🧪 evaluators/
 │   ├── NOVELTY_SCORE_RUBRIC.md           ← 0–100 novelty quantification
@@ -96,10 +96,10 @@ claude-research-excellence/
 │   └── IMPACT_PREDICTOR.md              ← Citation & h-index forecasting
 │
 └── 📚 examples/
-    ├── computer_science/
-    ├── biomedical/
-    ├── social_science/
-    └── interdisciplinary/
+    ├── computer_science.md               ← CS/AI: MENTOR LLM Reasoning (GSM8K, SVAMP, StrategyQA)
+    ├── biomedical.md                     ← Biomed: CRISPR HSC Off-Target (NCT05912400, BCL11A)
+    ├── social_science.md                 ← SocSci: Social Media Deliberation (N=1,500, DCI, DQI)
+    └── interdisciplinary.md              ← Interdisciplinary: BioPhysiFold AI Drug Design (ChEMBL, PDB)
 ```
 
 ---
